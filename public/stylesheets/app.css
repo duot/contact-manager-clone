@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: large;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  background-color: #6f5499;
+  color: white;
+  height: 12ch;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+footer {
+  border-top: 1px solid grey;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  min-height: 400px;
+}
+
+.panel {
+  background-color: #f5f5f5;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 5rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.message_box {
+  background-color: #f5f5f5;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 5rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  place-content: center center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1ch;
+}
+
+.contact {
+  display: inline-block;
+  min-width: 200px;
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+}
+
+.contact h3 {
+  font-weight: bold;
+}
+
+button.tag {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+}
+
+form {
+  margin:auto;
+  max-width: 30rem;
+}
+
+form h2 {
+  font-size: large;
+  text-align: center;
+}
+
+form section {
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+}
+
+.hide {
+  display: none;
+}
